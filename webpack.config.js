@@ -19,5 +19,19 @@ module.exports = {
     contentBase: '/day1/src/public', //source of static assets
     port: 7700,
 
+  },
+  module:{
+    rules: [
+      {
+        test: /\.js$/,
+        use: 'babel-loader',
+        exclude: [
+          /node_modules/
+        ]
+      },
+      {
+        
+      }
+    ]
   }
 }
