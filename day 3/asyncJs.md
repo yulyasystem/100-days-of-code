@@ -1,5 +1,6 @@
 ## async js
-**call stack** keeps track where functions are in the execution of program. 
+
+**call stack** keeps track where functions are in the execution of program.
 **event queue** - list of functions in FIFO order
 **event loop** waits for and dispatches functions in the event queue to the call stack
 
@@ -7,5 +8,7 @@ webapis like threads. timers are provided by browser(webapis). when webapi finis
 
 **promises**
 
-then() function that receives function to be executed(callback) when it has been *fulfilled* 
-catch() receives a function to be executed when it has been *rejected*
+then() function that receives function to be executed(callback) when it has been _fulfilled_
+catch() receives a function to be executed when it has been _rejected_
+
+**async** defines async function, returns AsyncFunction object,returns Promise after call. can contain await which stops function execution and waits for promise response
