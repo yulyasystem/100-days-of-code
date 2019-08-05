@@ -1,26 +1,25 @@
 const amIlucky = true;
 
 const willSomeoneLoveMe = new Promise(
-    function(resolve,reject){
-        if(amIlucky){
+    function (resolve, reject) {
+        if (amIlucky) {
             const love = {
                 you: "happy",
                 alsoYou: "notHappy"
             };
             resolve(love);
-        }
-        else{
+        } else {
             const pain = new Error("cry");
             reject(pain);
         }
     }
 );
 
-const askFlower = function(){
+const askFlower = function () {
     console.log("before knowing your destiny");
-    willSomeoneLoveMe.then(function(fulfilled){
+    willSomeoneLoveMe.then(function (fulfilled) {
         console.log("Fulfilled! LOVE YOU!")
-    }).catch(function(error){
+    }).catch(function (error) {
         console.log(error.message)
     });
     console.log("after");
@@ -33,32 +32,30 @@ askFlower();
 const amIlucky = false;
 
 const willSomeoneLoveMe = new Promise(
-    (resolve,reject)=>{
-        if(amIlucky){
+    (resolve, reject) => {
+        if (amIlucky) {
             const love = {
                 you: "happy",
                 alsoYou: "notHappy"
             };
             resolve(love);
-        }
-        else{
+        } else {
             const pain = new Error("cry");
             reject(pain);
         }
     }
 );
 
-async function askFlower (){
+async function askFlower() {
 
-try
-    {console.log("before knowing your destiny");
-        let love  = await willSomeoneLoveMe;
+    try {
+        console.log("before knowing your destiny");
+        let love = await willSomeoneLoveMe;
         console.log("Fulfilled! LOVE YOU!")
-    }
-    catch(error){
+    } catch (error) {
         console.log(error.message)
     };
-    
+
 };
 
 (async () => {
