@@ -1,0 +1,29 @@
+$primary-color: #2e878a;
+
+$secondary-color: #612e8a;
+
+@mixin font {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: $secondary-color;
+}
+
+.row:not(.column) {
+    height: 20px;
+    background: rgb(45, 173, 146);
+    margin: 3px;
+    width: 30px;
+}
+
+.central-block {
+    margin: 10px;
+
+    ul {
+        list-style: none;
+        display: inline;
+
+        li {
+            @include font;
+        }
+    }
+}

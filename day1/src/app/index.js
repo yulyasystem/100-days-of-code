@@ -1,3 +1,4 @@
+import '../style/app.scss';
 let add = (a, b) => a + b;
 
 console.log();
@@ -29,4 +30,3 @@ const {
   ...k
 } = obj;
 console.log(k);
-
