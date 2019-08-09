@@ -12,3 +12,5 @@ then() function that receives function to be executed(callback) when it has been
 catch() receives a function to be executed when it has been _rejected_
 
 **async** defines async function, returns AsyncFunction object,returns Promise after call. can contain await which stops function execution and waits for promise response
+
+**fetch ()** API only rejects a promise when the user is offline or some networking errors occur -> not
