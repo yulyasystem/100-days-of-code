@@ -1,0 +1,62 @@
+/*hide scroll */
+
+::-webkit-scrollbar {
+    /* chrome based */
+    width: 0px;
+    /* ширина scrollbar'a */
+    background: transparent;
+    /* опционально */
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/*wtf horizontal scroll*/
+/*
+.horizontal-scroll {
+    width: 100vh;
+    height: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateY(-100px);
+    transform: rotate(-90deg);
+    transform-origin: right top;
+}
+
+.horizontal-scroll>div {
+    width: 100px;
+    height: 100px;
+    transform: rotate(90deg);
+    transform-origin: right top;
+}
+*/
+
+body {
+    font-size: 0;
+    margin: 0;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.item {
+    display: inline-block;
+    width: 33.33%;
+    height: 100vh;
+    font-size: 20px;
+    background-color: orange;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+.horizontal-sroll {
+    height: 100vh;
+    width: 100vw;
+
+}

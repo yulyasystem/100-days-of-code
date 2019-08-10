@@ -23,3 +23,7 @@ element.on('event', throttle(handleEvent, 2000));
     top:50px;
 }
 ```
+
+**overflow** sets what to do when content is too big to fit in its block context. In order to overflow have an effect, the block-level container must have either a height  or white-space.
+
+*white-space* how white space (vertical and horizontal spaces between characters) inside an element is handled.
