@@ -20,4 +20,10 @@ function MyComponent() {
   ...
 }
 ```
+(1) don’t use var anymore, because letand const are more specific
+
+(2) default to const, because it cannot be re-assigned or re-declared
+
+(3) use let when re-assigning the variable
+
 git 
