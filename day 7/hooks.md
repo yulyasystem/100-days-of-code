@@ -25,5 +25,8 @@ function MyComponent() {
 (2) default to const, because it cannot be re-assigned or re-declared
 
 (3) use let when re-assigning the variable
+useAuth() hook that enables any component to check the auth state and re-renders if it changes. 
+
+useEventListeners – if use a lot of listeners -> use custom hook, handles checking if event listeners are supported
 
 git 
