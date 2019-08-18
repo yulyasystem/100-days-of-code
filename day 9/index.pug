@@ -1,0 +1,36 @@
+extends layout/main 
+block variables
+    -var pageTitle = 'Todo List'
+block content
+    .app
+        .user
+            img(src='./img/logo.png')
+        .context
+            .square
+            h3 Hello darling,
+            p Here is the things to buy.
+            .todo
+                span.bar
+                p Buy a milk
+            .todo
+                span.bar
+                p Buy an apple
+            .todo
+                span.bar
+                p Buy a toothbrush
+            h4 Lists
+            .more
+                .set
+                    .box
+                    h5 Personal
+                    p 5 tasks
+                .set
+                    .box
+                    h5 Work
+                    p 3 tasks
+                .set
+                    .box
+                    h5
+                    p
+                
+
