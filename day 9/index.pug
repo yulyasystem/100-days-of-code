@@ -2,35 +2,51 @@ extends layout/main
 block variables
     -var pageTitle = 'Todo List'
 block content
-    .app
-        .user
-            img(src='./img/logo.png')
-        .context
-            .square
-            h3 Hello darling,
-            p Here is the things to buy.
-            .todo
-                span.bar
-                p Buy a milk
-            .todo
-                span.bar
-                p Buy an apple
-            .todo
-                span.bar
-                p Buy a toothbrush
-            h4 Lists
-            .more
-                .set
-                    .box
-                    h5 Personal
-                    p 5 tasks
-                .set
-                    .box
-                    h5 Work
-                    p 3 tasks
-                .set
-                    .box
-                    h5
-                    p
-                
+    .container
+        .card
+            .card-head
+                img.card-logo(src="img/logo.png")
+                //- img.product-img(src="img/tel1.png")
+                .product-detail
+                    h2 Phone detail
+                    p Unknown Huawei smartphone with model number AMN-AL10 has received TENAA certification 
+                span.back-text FAS
+            .card-body 
+                .product-desc
+                    span.product-title Pgone 
+                        b style
+                        span.badge New
+                span.product-caption Hype Style Collection
+                .product-props
+                    span.product-size
+                        h4 Size
+                        ul.ul-size
+                            li
+                                a(href="#") S
+                            li
+                                a(href="#") X
+                            li
+                                a(href="#") Mi
+                            li
+                                a(href="#") My
+                            li
+                                a.active(href="#") XR
+                    span.product-color
+                        h4 Color
+                        ul.ul-color
+                            li
+                                a.active(href="#") Y
+                            li
+                                a(href="#") G
+                            li
+                                a(href="#") Bl
+                            li
+                                a(href="#") Wh
+                            li
+                                a(href="#") R
+                        
+                        
+                            
+                            
+
 
