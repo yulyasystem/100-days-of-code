@@ -73,28 +73,34 @@ a {
 
 .photo-block {
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
 
 }
 
-.photo-block__item {
+.photo-block--primary {
     width: 100%;
+    max-width: 35rem;
+}
+
+.photo-block--secondary {
+    max-width: 30rem;
     padding-left: .5rem;
     padding-right: .5rem;
     margin-bottom: 2rem;
 }
 
-.photo-block--double-space {
-    margin-bottom: 5rem;
+.img--primary {
+    width: 100%;
+
 }
 
-.img {
+.photo-block__img--secondary {
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-width: 120em;
-    width: calc(100vw - 2.5em)
+}
+
+.photo-block__text {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
 }
