@@ -1,0 +1,26 @@
+.what {
+    background-color: #F4F5F7;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__container {
+    display: flex;
+    flex-direction: column;
+
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 35rem;
+}
+
+.info__text {
+    font-size: 22px;
+    line-height: 32px;
+    padding-top: 1rem;
+    color: #2B292D;
+}

@@ -1,4 +1,5 @@
 @import "./header.scss";
+@import "./what.scss";
 
 
 * {
@@ -22,9 +23,11 @@ body {
 .text--bold {
     font-style: normal;
     font-weight: bold;
+    color: #2B292D;
 }
 
 .page {
+
     overflow-x: hidden;
 }
 
