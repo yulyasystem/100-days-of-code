@@ -40,11 +40,12 @@
 .screen-block {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 20px;
 }
 
 .screen-block__img {
-    width: 40rem;
+    width: 45rem;
+
 }
 
 .reveal-block {
@@ -62,34 +63,58 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     padding-top: 2rem;
-    padding-bottom: 1.5rem;
 
 }
 
-.revealing-block__text {
+.reveal-block__text {
+    opacity: 0;
+    max-height: 0;
     width: 28rem;
     font-size: 18px;
     line-height: 26px;
     padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
-.revealing-block__link {
+.reveal-block__link {
     padding-left: 1rem;
     font-size: 22px;
     line-height: 26px;
     color: #2B292D;
 
+}
 
+
+.reveal-block__heading:hover .reveal-block__link {
+    color: #3142C6;
 
 }
 
-.revealing-block__icon {
-    fill: #2B292D;
+.reveal-block__heading:hover .reveal-block__icon {
+    fill: #3142C6;
+
 }
+
+
+
+
+
+
 
 .aside {
     position: absolute;
     left: -20px;
     top: 220px;
+}
+
+.reveal-block__text {
+    transition: all 0.2s ease 0.1s;
+}
+
+
+.active {
+    opacity: 1;
+    max-height: 100%;
 }
