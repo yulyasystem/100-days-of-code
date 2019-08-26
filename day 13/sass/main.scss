@@ -2,6 +2,7 @@
 @import "./what.scss";
 @import "./logo.scss";
 @import "./leads.scss";
+@import "./team-inbox";
 
 
 * {
@@ -26,6 +27,14 @@ body {
     font-style: normal;
     font-weight: bold;
     color: #2B292D;
+}
+
+.text--green {
+    color: #009B4D;
+}
+
+.text--orange {
+    color: #F1592B;
 }
 
 .page {
