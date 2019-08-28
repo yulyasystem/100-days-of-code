@@ -1,0 +1,42 @@
+.team {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.team__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team__heading {
+    width: 32rem;
+}
+
+.text-block__button {
+    margin-top: 2rem;
+
+}
+
+.details-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.text-with-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 21.5rem;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.text-with-link__link {
+    text-decoration-line: underline;
+    color: #3040C4;
+    font-weight: bold;
+    padding-top: 1rem;
+}
