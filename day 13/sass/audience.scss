@@ -1,0 +1,23 @@
+.align-center {
+    align-self: center;
+}
+
+.audience {
+    background-color: rgba(0, 161, 198, 0.07);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.audience__paragraph {
+    width: 35rem;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.audience__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
