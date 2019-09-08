@@ -1,0 +1,61 @@
+*
+    margin: 0
+    padding: 0
+    font-family: 'Montserrat', sans-serif
+.header
+    display: flex
+    width: 100%
+    align-self: center
+    background: black
+    padding-top: 26px
+.header__logo
+    text-transform: uppercase
+    font-weight: 800
+    font-size: 24px
+    margin-left: 12%
+    cursor: pointer
+    color: white
+.nav
+    display: flex
+    flex-wrap: wrap
+    margin-left: 29%
+
+.nav__link
+    color: white
+    text-align: center
+    text-decoration: none
+    padding-left: 16px
+    padding-right: 16px
+    font-size: 14px
+    font-weight: bold
+.nav__link:hover
+    border-bottom: 2px solid red
+
+.icon
+    display: none
+
+@media screen and ( max-width: 1010px )
+    .nav__link
+        display: none
+    .nav
+        width: 100%
+        position: relative
+    .icon
+        display: block
+        font-size: 25px
+        color: white
+        text-decoration: none
+        position: absolute
+        top: 24px
+        right: 26px
+    .nav--open
+        position: relative
+        height: 420px
+        flex-direction: column
+        top: 60px
+        left: -200px
+
+    .nav--open .nav__link
+        display: block
+        padding-bottom: 1rem
+        padding-top: 1rem
